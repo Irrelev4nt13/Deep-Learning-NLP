@@ -1,2 +1,9 @@
-# Deep-Learning-NLP
-Development of Deep Learning models for Sentiment Analysis, including Logistic Regression, FNN, LSTM/GRU with attention, and BERT.
+# Sentiment Analysis using Natural Language Processing
+
+This project centers on the development of Deep Learning models for sentiment analysis, employing techniques such as logistic regression, Feedforward Neural Networks (FNN), Recurrent Neural Networks (RNN), Long Short-Term Memory (LSTM) Networks, Gated Recurrent Units (GRU) with attention mechanisms, and Bidirectional Encoder Representations from Transformers (BERT).
+
+The primary goal is to create sentiment classifiers that can accurately determine the polarity—positive, negative, or neutral—of given text inputs. The project utilizes a Twitter dataset related to the Greek general elections for training these models. To enhance performance, a comprehensive exploration of preprocessing, tokenizing, and feature extraction techniques is conducted, ensuring that the models are well-equipped to handle the nuances of natural language in sentiment analysis tasks.
+
+The experiments demonstrate the construction of RNN architectures featuring stacked LSTM and GRU cells, integrated with attention mechanisms to capture critical patterns in input sequences. Techniques such as gradient clipping and skip connections are thoroughly explored to enhance model convergence and generalization. Gradient clipping stabilizes model weight updates by capping gradients to a predefined threshold, preventing exploding gradients. Skip connections improve gradient flow, addressing the vanishing gradient problem and enhancing the learning of long-range dependencies.
+
+The notebooks include implementations of top-performing models for each architecture, alongside an extensive analysis of preprocessing techniques and hyperparameter tuning using the Optuna framework. Both lemmatization and stemming methods were trialed during preprocessing. Logistic regression employed the Term Frequency-Inverse Document Frequency (TF-IDF) vectorizer, while the Feedforward network used Stanford's GloVe embeddings. The RNN models incorporated multiheaded attention, inspired by the "Attention is All You Need" paper. The final models explored were BERT-based, sourced from Hugging Face.
